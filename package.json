@@ -1,0 +1,21 @@
+{
+  "name": "iamlistener",
+  "version": "1.0.0",
+  "description": "Microservice API with Postgres and Passport Auth",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "kiv"
+  },
+  "keywords": [
+    "microservice",
+    "api",
+    "postgres",
+    "passport"
+  ],
+  "author": "jyxtech",
+  "license": "ISC"
+}
