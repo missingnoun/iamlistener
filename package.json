@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Microservice API with Postgres and Passport Auth",
   "main": "server.js",
+  "type": "module",
   "scripts": {
+    "dev": "@powershell -Command $Env:DEBUG='iamlistener*'; $Env:NODE_ENV='dev'; nodemon ./src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +19,28 @@
     "passport"
   ],
   "author": "jyxtech",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.3",
+    "connect-ensure-login": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "massive": "^6.6.2",
+    "morgan": "^1.10.0",
+    "oauth2orize": "^1.11.0",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport-oauth2-client-password": "^0.1.2",
+    "pg": "^8.5.1",
+    "pg-monitor": "^1.4.1",
+    "postgresql": "0.0.1"
+  }
 }
